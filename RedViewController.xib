@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedViewController" customModule="InternalMessaging" customModuleProvider="target">
+            <connections>
+                <outlet property="blueMessage" destination="AeC-F6-0ZK" id="Y86-ru-e3D"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yourMessage" destination="vh1-to-wqg" id="bzo-iK-8e1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue's Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-F6-0ZK">
+                    <rect key="frame" x="188" y="204" width="224" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Dtg-GD-vK9"/>
+                        <constraint firstAttribute="width" constant="224" id="Tw3-b2-SLJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vh1-to-wqg">
+                    <rect key="frame" x="188" y="291" width="224" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDM-J9-1s8">
+                    <rect key="frame" x="267" y="352" width="66" height="43"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="m2v-fj-JOB"/>
+                        <constraint firstAttribute="height" constant="43" id="zpU-6n-3Gz"/>
+                    </constraints>
+                    <state key="normal" title="SEND">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendButtonTapped:" destination="-1" eventType="touchUpInside" id="lgf-4f-tG4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vh1-to-wqg" firstAttribute="centerX" secondItem="mDM-J9-1s8" secondAttribute="centerX" id="3ql-NG-PY6"/>
+                <constraint firstItem="vh1-to-wqg" firstAttribute="top" secondItem="AeC-F6-0ZK" secondAttribute="bottom" constant="47" id="640-KW-3hg"/>
+                <constraint firstItem="AeC-F6-0ZK" firstAttribute="leading" secondItem="vh1-to-wqg" secondAttribute="leading" id="TRO-bp-ymb"/>
+                <constraint firstItem="AeC-F6-0ZK" firstAttribute="trailing" secondItem="vh1-to-wqg" secondAttribute="trailing" id="i5C-TI-XrJ"/>
+                <constraint firstItem="mDM-J9-1s8" firstAttribute="top" secondItem="vh1-to-wqg" secondAttribute="bottom" constant="31" id="jyn-RH-OYz"/>
+                <constraint firstItem="AeC-F6-0ZK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k8m-G2-A8Y"/>
+                <constraint firstItem="AeC-F6-0ZK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="204" id="wOA-xf-RF8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

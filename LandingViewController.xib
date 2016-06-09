@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="InternalMessaging" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's talk... internally! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8b-TL-gtV">
+                    <rect key="frame" x="203" y="103" width="194" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDI-iC-6Bz">
+                    <rect key="frame" x="252" y="279" width="96" height="42"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.4941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="rY2-WP-yaS"/>
+                    </constraints>
+                    <state key="normal" title="Blue User">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="blueButtonTapped:" destination="-1" eventType="touchUpInside" id="01f-QQ-o7i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIj-1u-7I4">
+                    <rect key="frame" x="252" y="183" width="96" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DpZ-so-OvK"/>
+                        <constraint firstAttribute="width" constant="96" id="OWh-bZ-dmL"/>
+                    </constraints>
+                    <state key="normal" title="Red User">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="redButtonTapped:" destination="-1" eventType="touchUpInside" id="Gvc-oY-0MS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XIj-1u-7I4" firstAttribute="leading" secondItem="mDI-iC-6Bz" secondAttribute="leading" id="95t-Tn-t06"/>
+                <constraint firstItem="U8b-TL-gtV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A0B-zP-ZgH"/>
+                <constraint firstItem="U8b-TL-gtV" firstAttribute="centerX" secondItem="XIj-1u-7I4" secondAttribute="centerX" id="Emh-XO-G6B"/>
+                <constraint firstItem="mDI-iC-6Bz" firstAttribute="top" secondItem="XIj-1u-7I4" secondAttribute="bottom" constant="52" id="Hby-Pe-aha"/>
+                <constraint firstItem="XIj-1u-7I4" firstAttribute="trailing" secondItem="mDI-iC-6Bz" secondAttribute="trailing" id="fIB-sw-wqz"/>
+                <constraint firstItem="XIj-1u-7I4" firstAttribute="top" secondItem="U8b-TL-gtV" secondAttribute="bottom" constant="56" id="n0Q-VE-bTc"/>
+                <constraint firstItem="mDI-iC-6Bz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tMb-L2-43O"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
